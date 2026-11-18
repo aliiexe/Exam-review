@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f8f9fb"><meta name="robots" content="noindex,nofollow">
+<meta name="description" content="TRACE Campus — les trois modules de révision, les examens blancs et l’espace focus réunis.">
+<title>TRACE Campus · Mon espace de révision</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/campus.css">
+<script>try{const p=JSON.parse(localStorage.getItem('trace-campus-prefs-v1')||'{}');document.documentElement.dataset.theme=p.theme||((window.matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light')}catch(e){}</script>
+</head>
+<body>
+<a class="skip-link" href="#workspace">Aller au contenu</a>
+<noscript><div class="noscript">Active JavaScript pour utiliser TRACE Campus. Les PDF restent disponibles dans le dossier modules.</div></noscript>
+<aside class="sidebar" id="sidebar" aria-label="Navigation principale"></aside>
+<button class="menu-overlay" id="menu-overlay" aria-label="Fermer le menu" hidden></button>
+<div class="app-shell">
+<header class="topbar" id="topbar"></header>
+<main id="workspace" tabindex="-1">
+<div id="portal" class="portal"><div class="loading-card">Ouverture de ton espace de révision…</div></div>
+<div id="frames" class="frames" hidden></div>
+<div class="module-loading" id="module-loading" hidden><div class="loading-card"><span class="spinner"></span><strong>Ouverture du module…</strong><span>Le contenu est chargé à la demande.</span></div></div>
+</main>
+</div>
+<dialog class="search-dialog" id="search-dialog" aria-label="Rechercher dans les trois modules">
+<div class="search-box"><span id="search-icon"></span><input id="search-input" type="search" placeholder="Une notion, un artefact, une commande…" autocomplete="off" aria-label="Recherche globale"><button class="key-close" data-action="close-search" aria-label="Fermer la recherche">Esc</button></div>
+<div id="search-results" class="search-results"></div><div class="search-footer">Fiches, repères, commandes et ateliers des trois modules · ⌘ / Ctrl K</div>
+</dialog>
+<dialog class="confirm-dialog" id="confirm-dialog" aria-labelledby="confirm-title"></dialog>
+<section class="music-panel" id="music-panel" aria-labelledby="music-title" tabindex="-1" hidden>
+<div class="section-heading"><div><span class="eyebrow">TON FOND SONORE</span><h2 id="music-title">Un peu de calme.</h2></div><button class="icon-button" data-action="close-music" aria-label="Fermer le panneau musique" id="music-close"></button></div>
+<div class="music-placeholder" id="music-placeholder"><div class="record-symbol" aria-hidden="true">♫</div><strong>lofi beats</strong><p>La playlist Spotify pour accompagner tes révisions.</p><button class="button primary" data-action="load-spotify">Charger le lecteur</button></div>
+<div id="spotify-slot"></div>
+<div class="music-links"><a id="spotify-link" href="https://open.spotify.com/playlist/37i9dQZF1DWWQRwui0ExPn" target="_blank" rel="noopener noreferrer">Ouvrir dans Spotify ↗</a><button class="text-button" data-action="unload-spotify" id="unload-spotify" hidden>Décharger</button></div>
+<details class="music-details"><summary>Utiliser ma playlist</summary><label for="playlist-url">Lien Spotify public</label><div class="input-row"><input id="playlist-url" type="url" placeholder="https://open.spotify.com/playlist/…"><button class="button" data-action="set-playlist">Utiliser</button></div><button class="text-button" data-action="default-playlist">Revenir à lofi beats</button></details>
+<div class="ambient-control"><div class="section-heading"><div><strong>Bruit doux</strong><p>Un son grave et continu, sans connexion.</p></div><button id="ambient-toggle" class="switch" role="switch" aria-checked="false" aria-label="Activer le bruit doux" data-action="ambient"></button></div><label class="volume-label" for="ambient-volume">Volume <input id="ambient-volume" type="range" min="0" max="100" value="20"><output id="ambient-value">20 %</output></label></div>
+<p class="fineprint">Spotify se charge uniquement à ta demande et nécessite Internet. La lecture peut être limitée à des extraits. Fermer ce panneau ne coupe pas le son.</p>
+</section>
+<input type="file" id="import-input" accept="application/json,.json" hidden>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+<div class="sr-only" id="announcer" role="status" aria-live="polite"></div>
+<script src="assets/campus.js" defer></script>
+</body>
+</html>

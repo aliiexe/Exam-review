@@ -1,0 +1,177 @@
+[
+  {
+    "module": "forensics",
+    "collection": "chapters",
+    "items": 5,
+    "sha256": "ba70fde1bce9090d6058afef9403c936ee72716162921acd34b25f9419f7f48d",
+    "unchanged": true
+  },
+  {
+    "module": "forensics",
+    "collection": "cards",
+    "items": 121,
+    "sha256": "ee1bc0c74538e0bb8fdeb7f5046a27d037ec4a74c6fd7950d76b3a9ce5ed9a36",
+    "unchanged": true
+  },
+  {
+    "module": "forensics",
+    "collection": "questions",
+    "items": 400,
+    "sha256": "bd3f2127d089a4c82f465092e41996fa0bc2fc64ba0a2f4cba99d2328581c633",
+    "unchanged": true
+  },
+  {
+    "module": "forensics",
+    "collection": "exams",
+    "items": 10,
+    "sha256": "23bac0a22df600b92e7e4a39480324542b0acfce51715835e988500cb347282b",
+    "unchanged": true
+  },
+  {
+    "module": "forensics",
+    "collection": "artifacts",
+    "items": 82,
+    "sha256": "8315cfebdd88f68094c8529b346ef383515d153b1839e2cc484ed49671b9fd69",
+    "unchanged": true
+  },
+  {
+    "module": "forensics",
+    "collection": "commands",
+    "items": 48,
+    "sha256": "b527a354e27ff9570b022ac08b7ce140ba4f52467a3832f6faefccfa9b9658a1",
+    "unchanged": true
+  },
+  {
+    "module": "forensics",
+    "collection": "notes",
+    "items": 10,
+    "sha256": "3c568fa3efab8fa9ab522242493656296bccf293be2a06b1a57c3870a477623a",
+    "unchanged": true
+  },
+  {
+    "module": "cryptanalyse",
+    "collection": "chapters",
+    "items": 4,
+    "sha256": "7f73886b4fd3f55830dbdba2bb58877c9e79a01ea2888899e1d5aa7a218cb5b2",
+    "unchanged": true
+  },
+  {
+    "module": "cryptanalyse",
+    "collection": "cards",
+    "items": 100,
+    "sha256": "cc49903c7c61ea2f878ac0dbf1bb0df7762dd99264e69e8a4c607f36ea54bfd1",
+    "unchanged": true
+  },
+  {
+    "module": "cryptanalyse",
+    "collection": "questions",
+    "items": 400,
+    "sha256": "8c26c31e2290e4744189f83a6e46556693a032809c92d247d1f61938d32b2a06",
+    "unchanged": true
+  },
+  {
+    "module": "cryptanalyse",
+    "collection": "exams",
+    "items": 10,
+    "sha256": "56dfef31e8093bfc34c506ac5189bafd4549b1746a100993318335c3fc804a2a",
+    "unchanged": true
+  },
+  {
+    "module": "cryptanalyse",
+    "collection": "artifacts",
+    "items": 53,
+    "sha256": "5b013171cc7c2ebfd4919619a011026074903cb1d9f1a289a6155167ba9aeaf8",
+    "unchanged": true
+  },
+  {
+    "module": "cryptanalyse",
+    "collection": "commands",
+    "items": 12,
+    "sha256": "c794d2c9295de100fdf6a94142742083172db7e03443a7b0e7b5f78c9f993f2a",
+    "unchanged": true
+  },
+  {
+    "module": "cryptanalyse",
+    "collection": "notes",
+    "items": 12,
+    "sha256": "a83e1662b29319c1e828164c1fdf1920a0c9774a5df5c4567479ec69e847f65e",
+    "unchanged": true
+  },
+  {
+    "module": "cryptanalyse",
+    "collection": "td",
+    "items": 4,
+    "sha256": "323a1731abb103c9687786bbe67d3a204575647bca35327cc79d2c97102d1204",
+    "unchanged": true
+  },
+  {
+    "module": "cryptanalyse",
+    "collection": "externals",
+    "items": 2,
+    "sha256": "ea8225f0d2b5ea5cf466609c6e6a24a321b67a2e7296a53bd9ba8f44a4ccb2ae",
+    "unchanged": true
+  },
+  {
+    "module": "audit",
+    "collection": "chapters",
+    "items": 7,
+    "sha256": "fb0c2b4553994bcd395215a6cd04ee57c0fce9d735c00e6f6e2df5339d08d777",
+    "unchanged": true
+  },
+  {
+    "module": "audit",
+    "collection": "cards",
+    "items": 116,
+    "sha256": "e4167b827925f5df30f58ba6f6ae76fae317b2abc33e0141947304d7ff48eb36",
+    "unchanged": true
+  },
+  {
+    "module": "audit",
+    "collection": "questions",
+    "items": 400,
+    "sha256": "e4ff6963abbf3a10a6d571d9e26d60888265d12254d271aba0f2a52a009cf612",
+    "unchanged": true
+  },
+  {
+    "module": "audit",
+    "collection": "exams",
+    "items": 10,
+    "sha256": "16cd1e2f2d127dd33ff35c7317cdbfe6705e6550abbe2e1508bf60a91b303b15",
+    "unchanged": true
+  },
+  {
+    "module": "audit",
+    "collection": "artifacts",
+    "items": 52,
+    "sha256": "e1017411cd2ed7f0d0764b8473d59aaccfb0e3102aa36a4c43dfe0b1087c858e",
+    "unchanged": true
+  },
+  {
+    "module": "audit",
+    "collection": "commands",
+    "items": 4,
+    "sha256": "5cb41ebc4c676a04edf9caf464ad7eecfaf7b3084c0df2b87a31256b457262a8",
+    "unchanged": true
+  },
+  {
+    "module": "audit",
+    "collection": "notes",
+    "items": 11,
+    "sha256": "9ef4ff35ea6975fec9d44270b08496f150f258c3f7ce3ab0a36d53f2595af19f",
+    "unchanged": true
+  },
+  {
+    "module": "audit",
+    "collection": "td",
+    "items": 7,
+    "sha256": "c25aade778eec53b4958a4236fa3990e6e1f7423291919312ccc4b7d5f6cd789",
+    "unchanged": true
+  },
+  {
+    "module": "audit",
+    "collection": "externals",
+    "items": 0,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "unchanged": true
+  }
+]
