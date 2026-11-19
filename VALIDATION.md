@@ -46,3 +46,22 @@ Le site n’a pas été déployé dans un compte Vercel depuis cette conversatio
 Tous les calculateurs n’ont pas fait l’objet d’une nouvelle validation mathématique exhaustive ; les contenus et moteurs pédagogiques antérieurs sont conservés. L’intégration ne promet pas une synchronisation entre appareils, une protection par mot de passe, une installation hors ligne, ni une validation officielle des sujets.
 
 Les données de test et les sauvegardes de test ne sont pas incluses dans le site livré. Le stockage du navigateur d’un nouvel utilisateur commence vide.
+
+## Ajout du module Gestion des risques
+
+- `python3 scripts/validate.py` : quatre modules, 417 fiches, 1 280 questions, 32 examens et 19 PDF ; toutes les pages sources présentes.
+- SHA-256 des 366 fichiers des trois modules précédents : identiques aux empreintes prises avant l’ajout. Les entrées précédentes du catalogue et de la recherche sont conservées.
+- `node scripts/test_risques.cjs` : navigation, source, stockage séparé, import, lancement sans chronomètre, correction, remise et expiration des examens.
+- Vérification dans le navigateur local : ouverture du module, chapitre, lecture de la page PDF, quiz avec réponse expliquée, conservation après rechargement, remise et corrigé, recherche globale EBIOS et ouverture de la fiche.
+
+Le module conserve le PDF de 188 pages à l’identique et offre 188 images de pages, 80 fiches, 80 questions distinctes et deux examens de 40 questions sans répétition entre sujets. Aucun déploiement distant n’est effectué par cet ajout.
+
+## Ajout du module Gestion des risques (novembre 2026)
+
+- 188 pages sources, 8 chapitres, 80 fiches, 80 questions et 2 examens distincts de 40 questions.
+- Quatre ateliers avec 10 réponses et brouillon de registre, intégrés aux sources, à la recherche et à la progression du campus.
+- `python3 scripts/validate.py` : collections, correspondances du catalogue, pages sources et empreintes des 366 fichiers des trois modules précédents.
+- `node scripts/test_risques.cjs` : routes, validation des imports, stockage isolé, lancement sans chronomètre, correction des entraînements, remise et expiration automatique des sessions.
+- Vérification dans le navigateur : ouverture du module, navigation de chapitre, lecteur de page PDF, réponse et correction d’un quiz, récupération de la session après rechargement, remise et score, recherche globale et lien vers la fiche.
+- Le fichier PDF intégré est identique au fichier fourni (SHA-256 vérifié). Les trois modules existants et leurs entrées de catalogue/recherche sont inchangés.
+- Ajout local dans le projet Vercel ; aucun déploiement réalisé.

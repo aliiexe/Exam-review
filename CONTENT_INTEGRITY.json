@@ -173,5 +173,59 @@
     "items": 0,
     "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
     "unchanged": true
+  },
+  {
+    "module": "risques",
+    "collection": "chapters",
+    "count": 8,
+    "sha256": "e448884a9d93bcf6ff9ad72e83be2a34a1bd696010359c54e7a2f3e1a6af87c3"
+  },
+  {
+    "module": "risques",
+    "collection": "cards",
+    "count": 80,
+    "sha256": "ebb87da4a39e089922451aeb1c01d0d72aebd2f327aa7a4899ac847a8ca14b0d"
+  },
+  {
+    "module": "risques",
+    "collection": "questions",
+    "count": 80,
+    "sha256": "c70a7850e8ef112798a676a6706b6345b16c222567e95ff1eb021171c17a4c8c"
+  },
+  {
+    "module": "risques",
+    "collection": "exams",
+    "count": 2,
+    "sha256": "5ae86f30407fd543cd8e69949b51fe3d256754e4043344da9b9c289bf3cdd2e5"
+  },
+  {
+    "module": "risques",
+    "collection": "artifacts",
+    "count": 80,
+    "sha256": "7798cc01b9f50d8775089a187fb464e5ad4fe5368976e0b221b62f779a1485f8"
+  },
+  {
+    "module": "risques",
+    "collection": "commands",
+    "count": 0,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  {
+    "module": "risques",
+    "collection": "sources",
+    "count": 1,
+    "sha256": "a38d6686850b8e9dce9cc8832188bb4475db01c9937fc80cee602763e88b9089"
+  },
+  {
+    "module": "risques",
+    "collection": "notes",
+    "count": 2,
+    "sha256": "605eb4633726d24094ec92f2e9249abb542f5679d49bb8b37f235b7a47eb23be"
+  },
+  {
+    "module": "risques",
+    "collection": "td",
+    "count": 4,
+    "sha256": "a25480ab6e8b9176dd27908a910bab5de041a4926459eace960f8f6848745f23"
   }
 ]

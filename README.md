@@ -9,18 +9,19 @@ Un seul site de révision, entièrement en français, prêt à héberger sur Ver
 | Digital Forensics | 5 | 121 | 400 | 10 |
 | Protocoles de sécurité & cryptanalyse | 4 | 100 | 400 | 10 |
 | Audit de sécurité des systèmes d’information | 7 | 116 | 400 | 10 |
-| **Total** | **16** | **337** | **1 200** | **30** |
+| Gestion des risques en cybersécurité | 8 | 80 | 80 | 2 |
+| **Total** | **24** | **417** | **1 280** | **32** |
 
-Les trente sujets comportent chacun 40 questions. Les fiches, les questions, les corrigés, les références, les ateliers NeoCare, le TD de cryptanalyse et les outils de calcul / matrices des trois sites sont conservés. Les fichiers `CONTENT_INTEGRITY.json` et `scripts/validate.py` permettent de vérifier les collections pédagogiques.
+Les trente-deux sujets comportent chacun 40 questions. Les fiches, les questions, les corrigés, les références, les ateliers NeoCare, le TD de cryptanalyse et les outils de calcul / matrices des trois sites sont conservés. Les fichiers `CONTENT_INTEGRITY.json` et `scripts/validate.py` permettent de vérifier les collections pédagogiques.
 
 ## Le campus commun
 
-- Accueil commun avec accès aux trois modules et reprise de la dernière vue.
+- Accueil commun avec accès aux quatre modules et reprise de la dernière vue.
 - Navigation unique, barre latérale rétractable et menu mobile.
-- Recherche globale dans 599 fiches, repères, commandes et ateliers.
-- Catalogue commun des trente examens avec lancement direct et durée configurable.
+- Recherche globale dans 689 fiches, repères, commandes et ateliers.
+- Catalogue commun des trente-deux examens avec lancement direct et durée configurable.
 - Tableau de progression et historique de résultats, tous modules confondus.
-- Bibliothèque : 18 PDF (523 pages), les 4 PowerPoint originaux et les guides Markdown.
+- Bibliothèque : 19 PDF (711 pages), les 4 PowerPoint originaux et les guides Markdown.
 - Thèmes clair / sombre et Google Sans via Google Fonts, avec police système de secours.
 - Un seul espace Focus : 25/5, 50/10, durées personnalisées, pauses, objectif de séance, minutes de travail, historique et notes « Pour plus tard ».
 - Spotify et bruit doux restent dans le cadre principal : changer de module ne recrée pas le lecteur.
@@ -80,11 +81,11 @@ Puis ouvrir `http://localhost:8000`.
 
 Dans chaque ancien fichier HTML : **Ma progression → Exporter en JSON**. Dans le nouveau campus : **Ma progression → Importer**. Importer les trois fichiers un par un.
 
-Une importation de module remplace seulement la progression de ce module, après confirmation. Les imports sont validés avant application. Pour les changements suivants, **Tout exporter** produit un seul fichier JSON pour les trois modules, le Focus commun et les préférences globales.
+Une importation de module remplace seulement la progression de ce module, après confirmation. Les imports sont validés avant application. Pour les changements suivants, **Tout exporter** produit un seul fichier JSON pour les quatre modules, le Focus commun et les préférences globales.
 
 Les anciens historiques Focus restent dans les données propres à chaque module importé. Ils ne sont pas artificiellement additionnés aux nouvelles statistiques du minuteur commun.
 
-Les données restent dans le stockage local du navigateur ; il n’y a **ni compte, ni base de données, ni synchronisation cloud**. Un nouveau domaine Vercel, un autre navigateur ou un autre appareil possède un stockage différent. Exporter avant de changer de domaine ou de vider les données du navigateur. Les clés propres aux trois modules sont conservées pour éviter toute collision entre leurs identifiants de fiches et de questions.
+Les données restent dans le stockage local du navigateur ; il n’y a **ni compte, ni base de données, ni synchronisation cloud**. Un nouveau domaine Vercel, un autre navigateur ou un autre appareil possède un stockage différent. Exporter avant de changer de domaine ou de vider les données du navigateur. Les clés propres aux quatre modules sont conservées pour éviter toute collision entre leurs identifiants de fiches et de questions.
 
 Le chronomètre d’un examen ne s’arrête pas lors d’un changement de vue, de module ou d’onglet. Son échéance reste absolue ; la copie est remise lorsque le module traite l’expiration. Le minuteur Focus est indépendant. Fermer la page coupe naturellement le lecteur audio ; le minuteur peut reprendre son état grâce à son échéance sauvegardée.
 
@@ -141,3 +142,9 @@ python3 scripts/validate.py
 ```
 
 Les sujets et corrigés d’entraînement ne sont pas des annales officielles. Cette intégration conserve les distinctions et avertissements déjà présents dans les trois modules ; elle ne constitue pas une nouvelle vérification académique des cours.
+
+## Module ajouté : Gestion des risques en cybersécurité
+
+Le support de Pr. Nada MOUCHFIQ (2026-2027, 188 pages) est intégré au module `risques` : huit chapitres, 80 fiches sourcées, 80 questions expliquées, deux examens blancs distincts de 40 questions, quatre ateliers (10 réponses) et un brouillon de registre. Les 188 pages sont lisibles dans le module et le PDF original est téléchargeable. Les sujets sont des entraînements créés pour la révision, pas des annales officielles. Le périmètre détaillé couvre les ateliers EBIOS RM 1 et 2 du support fourni.
+
+Les trois modules précédents restent inchangés, fichier par fichier. `ORIGINAL_MODULE_FILES.json` conserve leurs empreintes SHA-256 et `python3 scripts/validate.py` les vérifie, en plus des collections pédagogiques et du nouveau catalogue. Les compteurs communs s’adaptent au catalogue ; le module Risques possède sa propre clé de progression `trace-risques-revision-v1`.
